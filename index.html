@@ -115,8 +115,6 @@ body{background:var(--paper);color:var(--ink);font-family:"Lora","Noto Serif SC"
 section.hero.nav-active{display:flex;flex-direction:column}
 section.about.nav-active{display:grid}
 .data-strip.nav-active{display:grid}
-section.contact.nav-active{display:grid}
-footer.nav-active{display:flex}
 .marquee.nav-active{display:block}
 img{display:block;width:100%;height:100%;object-fit:cover}
 a{text-decoration:none;color:inherit}
@@ -396,7 +394,7 @@ nav{
 .press-date{font-size:.66rem;color:var(--mist);margin-top:.4rem;letter-spacing:.08em}
 
 /* ── CONTACT ── */
-.contact{background:var(--ink);padding:7rem 8rem;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
+.contact{background:var(--ink);padding:5rem 8rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
 .c-tag{font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(244,237,224,.3);margin-bottom:.9rem}
 .c-title{font-family:"Noto Serif SC";font-size:clamp(2.2rem,3.5vw,3.8rem);color:var(--paper);line-height:1.12;margin-bottom:1.2rem}
 .c-sub{font-size:.88rem;font-style:italic;color:rgba(244,237,224,.38);line-height:1.9}
@@ -651,9 +649,8 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
   <div class="nav-links-wrap">
     <ul class="nav-links">
       <li><a href="#" data-navlink="gallery" data-i18n="nav-works">Works</a></li>
-      <li><a href="#" data-navlink="stories" data-i18n="nav-stories">Stories</a></li>
-      <li><a href="#" data-navlink="about" data-i18n="nav-about">About</a></li>
-      <li><a href="#" data-navlink="contact" data-i18n="nav-contact">Contact</a></li>
+      <li><a href="#" data-navlink="exhibitions" data-i18n="nav-exhibitions">Exhibitions &amp; Projects</a></li>
+      <li><a href="#" data-navlink="about" data-i18n="nav-about">Biography</a></li>
     </ul>
   </div>
   <div class="nav-right">
@@ -688,7 +685,7 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
 </section>
 
 <!-- ══ MARQUEE ══ -->
-<div class="marquee" aria-hidden="true" data-navgroup="home">
+<div class="marquee" aria-hidden="true" data-navgroup="exhibitions">
   <div class="marquee-inner">
     <span data-i18n="mq1">40+ Years Devoted to the Craft</span><span class="dot">·</span>
     <span data-i18n="mq2">Tiangong-2 Space Mission · 2016</span><span class="dot">·</span>
@@ -708,7 +705,7 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
 </div>
 
 <!-- ══ DATA STRIP ══ -->
-<div class="data-strip" data-navgroup="home">
+<div class="data-strip" data-navgroup="exhibitions">
   <div class="ds"><span class="ds-n">40<span class="ds-sup">+</span></span><span class="ds-l" data-i18n="ds1">Years of Practice</span></div>
   <div class="ds"><span class="ds-n">7</span><span class="ds-l" data-i18n="ds2">Nations · Official Postage Stamps</span></div>
   <div class="ds"><span class="ds-n" style="font-size:1.8rem">D2273</span><span class="ds-l" data-i18n="ds3">Great Hall of the People</span></div>
@@ -716,7 +713,7 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
 </div>
 
 <!-- ══ THREE PILLARS ══ -->
-<section class="pillars" id="pillars" data-navgroup="home">
+<section class="pillars" id="pillars" data-navgroup="exhibitions">
   <div class="pillars-head rv">
     <p class="sec-tag" data-i18n="pillars-tag">Three Defining Milestones · 三大历史性成就</p>
     <h2 class="sec-title" data-i18n="pillars-title">Calligraphy that Transcends<br>Borders, Institutions & Gravity</h2>
@@ -770,7 +767,7 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
   </div>
 </section>
 
-<div class="divider" data-navgroup="home"></div>
+<div class="divider" data-navgroup="exhibitions"></div>
 
 <!-- ══ GALLERY ══ -->
 <section class="archive" id="gallery" data-navgroup="gallery">
@@ -1004,7 +1001,7 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
 </section>
 
 <!-- ══ TIMELINE ══ -->
-<section class="timeline-sec" id="timeline" data-navgroup="about">
+<section class="timeline-sec" id="timeline" data-navgroup="exhibitions">
   <div class="rv">
     <p class="sec-tag" data-i18n="tl-tag">Career Milestones · 成就历程</p>
     <h2 class="sec-title" data-i18n="tl-title">Four Decades of Recognition</h2>
@@ -1036,7 +1033,7 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
 </section>
 
 <!-- ══ STORIES / PRESS ══ -->
-<section class="press" id="stories" data-navgroup="stories">
+<section class="press" id="stories" data-navgroup="exhibitions">
   <div class="rv">
     <p class="sec-tag" data-i18n="press-tag">Stories · Media Coverage · 相关报道</p>
     <h2 class="sec-title" data-i18n="press-title">As Reported by<br>Leading Media</h2>
@@ -1063,46 +1060,26 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
   </div>
 </section>
 
-<div class="divider" data-navgroup="contact"></div>
+<div class="divider"></div>
 
 <!-- ══ CONTACT ══ -->
-<section class="contact" id="contact" data-navgroup="contact">
+<section class="contact" id="contact">
   <div class="rv">
-    <p class="c-tag" data-i18n="c-tag">Acquire · Commission · Exhibit</p>
-    <h2 class="c-title" data-i18n="c-title">Get in Touch<br>with the Artist</h2>
-    <p class="c-sub" data-i18n="c-sub">Inquiries about collecting original works, commissioning bespoke pieces, or international exhibition partnerships are warmly welcomed. All messages receive a personal reply within 48 hours.</p>
-    <div class="c-details">
-      <div class="c-row"><span class="c-lbl" data-i18n="c-based">Location</span><span class="c-val" data-i18n="c-based-val">Shandong, China</span></div>
-      <div class="c-row"><span class="c-lbl" data-i18n="c-for">For</span><span class="c-val" data-i18n="c-for-val">Collections · Commissions · Exhibitions</span></div>
-      <div class="c-row"><span class="c-lbl" data-i18n="c-resp">Response</span><span class="c-val" data-i18n="c-resp-val">Within 48 hours</span></div>
-      <div class="c-row"><span class="c-lbl" data-i18n="c-pay">Payment</span><span class="c-val" data-i18n="c-pay-val">Alipay · International Bank Transfer (SWIFT)</span></div>
-      <div class="c-row" style="margin-top:.5rem">
-        <span class="c-lbl" style="min-width:72px"></span>
-        <span class="c-val" style="font-size:.72rem;font-style:italic;color:rgba(244,237,224,.3);line-height:1.7" data-i18n="c-pay-note">Bank details &amp; Alipay QR code provided upon inquiry confirmation.</span>
-      </div>
-    </div>
+    <p class="c-tag" data-i18n="c-tag">Contact</p>
+    <h2 class="c-title" data-i18n="c-title">Get in Touch</h2>
   </div>
   <div class="rv">
-    <div class="f-gr"><input class="f-in" type="text" data-i18n-placeholder="f-name" placeholder="Your Name"></div>
-    <div class="f-gr"><input class="f-in" type="email" data-i18n-placeholder="f-email" placeholder="Email Address"></div>
-    <div class="f-2">
-      <input class="f-in" type="text" data-i18n-placeholder="f-country" placeholder="Country">
-      <select class="f-in">
-        <option value="" disabled selected data-i18n="f-intent">Intent</option>
-        <option data-i18n="f-opt1">Collect Original</option>
-        <option data-i18n="f-opt2">Commission Work</option>
-        <option data-i18n="f-opt3">Exhibition</option>
-        <option data-i18n="f-opt4">Press Enquiry</option>
-        <option data-i18n="f-opt5">Other</option>
-      </select>
+    <div class="c-details">
+      <div class="c-row"><span class="c-lbl" data-i18n="c-based">Location</span><span class="c-val" data-i18n="c-based-val">Shandong, China</span></div>
+      <div class="c-row"><span class="c-lbl" data-i18n="c-email-label">Email</span><span class="c-val"><a href="mailto:contact@zhangmantang.com" style="color:var(--paper);border-bottom:1px solid rgba(244,237,224,.3)">contact@zhangmantang.com</a></span></div>
+      <div class="c-row"><span class="c-lbl" data-i18n="c-resp">Response</span><span class="c-val" data-i18n="c-resp-val">Replies within 3 working days</span></div>
+      <div class="c-row"><span class="c-lbl">Instagram</span><span class="c-val"><a href="https://instagram.com/zhangmantang" target="_blank" style="color:var(--paper);border-bottom:1px solid rgba(244,237,224,.3)">@zhangmantang</a></span></div>
     </div>
-    <div class="f-gr"><textarea class="f-ta" data-i18n-placeholder="f-msg" placeholder="Your message…"></textarea></div>
-    <button class="f-sub" data-i18n="f-send">Send Inquiry</button>
   </div>
 </section>
 
 <!-- ══ FOOTER ══ -->
-<footer data-navgroup="contact">
+<footer>
   <div class="f-logo">张满堂</div>
   <p class="f-copy" data-i18n="footer-copy">© 2025 Zhang Mantang Studio · All Rights Reserved</p>
   <div class="f-links">
@@ -1136,15 +1113,12 @@ const LANGS = {
     "label": "EN",
     "logo-sub": "Mao-Style Calligraphy",
     "nav-works": "Works",
-    "nav-stories": "Stories",
-    "nav-about": "About",
-    "nav-contact": "Contact",
+    "nav-exhibitions": "Exhibitions &amp; Projects",
+    "nav-about": "Biography",
     "search-ph": "Search works & stories…",
     "hero-ey": "Mao-Style Calligraphy Master",
     "hero-pinyin": "Zhang Mantang",
     "hero-desc": "For over four decades, Zhang Mantang has devoted himself to the bold, liberated spirit of Mao-style calligraphy. His works have ascended to space, entered the Great Hall of the People, and are enshrined on official postage stamps across seven nations.",
-    "btn-works": "View Works",
-    "btn-stories": "Read Stories",
     "hero-stamp-tag": "7-Nation Postage Stamp Series · 2024",
     "hero-stamp-title": "Chinese Culture on Eurasian National Cards",
     "hero-stamp-sub": "16 calligraphy works · France, Germany, Netherlands, Spain, S. Korea, Thailand, Macau",
@@ -1207,30 +1181,16 @@ const LANGS = {
     "pub3": "Celebrity Magazine",
     "pub3-title": "40 Years Honing One Sword — Every Stroke a Spirit",
     "pub3-date": "In-depth Profile",
-    "c-tag": "Acquire · Commission · Exhibit",
-    "c-title": "Get in Touch with the Artist",
-    "c-sub": "Inquiries about collecting original works, commissioning bespoke pieces, or international exhibition partnerships are warmly welcomed. All messages receive a personal reply within 48 hours.",
+    "c-tag": "Contact",
+    "c-title": "Get in Touch",
     "c-based": "Location",
-    "c-for": "For",
-    "c-for-val": "Collections · Commissions · Exhibitions",
+    "c-email-label": "Email",
     "c-resp": "Response",
-    "c-resp-val": "Within 48 hours",
-    "c-pay": "Payment",
-    "f-name": "Your Name",
-    "f-email": "Email Address",
-    "f-country": "Country",
-    "f-intent": "Intent",
-    "f-opt1": "Collect Original",
-    "f-opt2": "Commission Work",
-    "f-opt3": "Exhibition",
-    "f-opt4": "Press Enquiry",
-    "f-opt5": "Other",
-    "f-send": "Send Inquiry",
+    "c-resp-val": "Replies within 3 working days",
     "footer-copy": "© 2025 Zhang Mantang Studio · All Rights Reserved",
     "f-ig": "Instagram",
     "f-wc": "WeChat",
     "f-press": "Press Kit",
-    "f-msg": "Your message…",
     "mq1": "40+ Years Devoted to the Craft",
     "mq2": "Tiangong-2 Space Mission · 2016",
     "mq3": "Great Hall of the People · D2273",
@@ -1266,15 +1226,12 @@ const LANGS = {
     "label": "简中",
     "logo-sub": "毛体书法",
     "nav-works": "作品",
-    "nav-stories": "故事",
+    "nav-exhibitions": "展览活动",
     "nav-about": "作者生平",
-    "nav-contact": "联系",
     "search-ph": "搜索作品与报道…",
     "hero-ey": "毛体书法艺术家",
     "hero-pinyin": "Zhang Mantang · 1963年生，山东滨州",
     "hero-desc": "张满堂先生潜心研习毛体书法四十余载，其作品形神兼备、气势磅礴。作品搭载天宫二号遨游太空，被人民大会堂永久收藏（编号D2273），并印制于法、德、荷、西、韩、泰、澳门七地官方邮票发行。",
-    "btn-works": "浏览作品",
-    "btn-stories": "阅读报道",
     "hero-stamp-tag": "七国邮票系列 · 2024",
     "hero-stamp-title": "《欧亚国家名片上的中国文化》",
     "hero-stamp-sub": "16幅书法作品 · 七国邮政正式发行",
@@ -1337,30 +1294,16 @@ const LANGS = {
     "pub3": "名人天下",
     "pub3-title": "40年磨一剑，笔笔皆精神",
     "pub3-date": "人物专访",
-    "c-tag": "收藏 · 委托 · 展览",
-    "c-title": "与张满堂先生联络",
-    "c-sub": "欢迎就原作收藏、定制创作或国际展览合作事宜垂询。所有留言均将在两个工作日内得到亲自回复。",
+    "c-tag": "联系方式",
+    "c-title": "联络我们",
     "c-based": "所在地",
-    "c-for": "意向",
-    "c-for-val": "收藏 · 委托 · 展览",
+    "c-email-label": "电子邮件",
     "c-resp": "回复时效",
-    "c-resp-val": "48小时内回复",
-    "c-pay": "付款方式",
-    "f-name": "您的姓名",
-    "f-email": "电子邮件",
-    "f-country": "国家/地区",
-    "f-intent": "意向",
-    "f-opt1": "收藏原作",
-    "f-opt2": "委托创作",
-    "f-opt3": "展览合作",
-    "f-opt4": "媒体采访",
-    "f-opt5": "其他",
-    "f-send": "发送咋询",
+    "c-resp-val": "3个工作日内回复",
     "footer-copy": "© 2025 张满堂书法工作室 · 版权所有",
     "f-ig": "Instagram",
     "f-wc": "微信",
     "f-press": "媒体资料包",
-    "f-msg": "留言内容…",
     "mq1": "四十载潜心磨砺",
     "mq2": "天宫二号升空 · 2016",
     "mq3": "人民大会堂收藏 · D2273",
@@ -1396,15 +1339,12 @@ const LANGS = {
     "label": "繁中",
     "logo-sub": "毛體書法",
     "nav-works": "作品",
-    "nav-stories": "故事",
+    "nav-exhibitions": "展覽活動",
     "nav-about": "作者生平",
-    "nav-contact": "聯繫",
     "search-ph": "搜尋作品與報道…",
     "hero-ey": "毛體書法藝術家",
     "hero-pinyin": "Zhang Mantang · 1963年生，山東濱州",
     "hero-desc": "張滿堂先生潛心研習毛體書法四十餘載，其作品形神兼備、氣勢磅礴。作品搭載天宮二號遨遊太空，被人民大會堂永久收藏（編號D2273），並印製於法、德、荷、西、韓、泰、澳門七地官方郵票發行。",
-    "btn-works": "瀏覽作品",
-    "btn-stories": "閱讀報道",
     "hero-stamp-tag": "七國郵票系列 · 2024",
     "hero-stamp-title": "《歐亞國家名片上的中國文化》",
     "hero-stamp-sub": "16幅書法作品 · 七國郵政正式發行",
@@ -1467,30 +1407,16 @@ const LANGS = {
     "pub3": "名人天下",
     "pub3-title": "40年磨一劍，筆筆皆精神",
     "pub3-date": "人物專訪",
-    "c-tag": "收藏 · 委託 · 展覽",
-    "c-title": "與張滿堂先生聯絡",
-    "c-sub": "歡迎就原作收藏、定製創作或國際展覽合作事宜垂詢。所有留言均將在兩個工作日內得到親自回覆。",
+    "c-tag": "聯繫方式",
+    "c-title": "聯絡我們",
     "c-based": "所在地",
-    "c-for": "意向",
-    "c-for-val": "收藏 · 委託 · 展覽",
+    "c-email-label": "電子郵件",
     "c-resp": "回覆時效",
-    "c-resp-val": "48小時內回覆",
-    "c-pay": "付款方式",
-    "f-name": "您的姓名",
-    "f-email": "電子郵件",
-    "f-country": "國家／地區",
-    "f-intent": "意向",
-    "f-opt1": "收藏原作",
-    "f-opt2": "委託創作",
-    "f-opt3": "展覽合作",
-    "f-opt4": "媒體採訪",
-    "f-opt5": "其他",
-    "f-send": "發送諮詢",
+    "c-resp-val": "3個工作日內回覆",
     "footer-copy": "© 2025 張滿堂書法工作室 · 版權所有",
     "f-ig": "Instagram",
     "f-wc": "微信",
     "f-press": "媒體資料包",
-    "f-msg": "留言內容…",
     "mq1": "四十載潛心磨礪",
     "mq2": "天宮二號升空 · 2016",
     "mq3": "人民大會堂收藏 · D2273",
@@ -1650,7 +1576,6 @@ searchInput.addEventListener('keydown',e=>{
     if (cls.indexOf('data-strip') >= 0) return 'grid';
     if (tag === 'section') {
       if (cls.indexOf('about') >= 0) return 'grid';
-      if (cls.indexOf('contact') >= 0) return 'grid';
       if (cls.indexOf('hero') >= 0) return 'flex';
     }
     return 'block';
@@ -1708,7 +1633,7 @@ searchInput.addEventListener('keydown',e=>{
     var item = e.target.closest('.sr-item');
     if (!item) return;
     var href = item.getAttribute('href') || '';
-    var groupMap = { '#gallery': 'gallery', '#stories': 'stories', '#about': 'about', '#contact': 'contact', '#pillars': 'home' };
+    var groupMap = { '#gallery': 'gallery', '#stories': 'exhibitions', '#about': 'about', '#pillars': 'exhibitions' };
     var group = groupMap[href] || 'home';
     setTimeout(function() { showGroup(group); }, 50);
   });
