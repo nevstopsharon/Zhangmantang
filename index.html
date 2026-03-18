@@ -212,13 +212,13 @@ nav{
 
 /* ── HERO ── */
 .hero{height:auto;display:flex;flex-direction:column;position:relative}
-.hero-l{flex:0 0 auto;display:flex;flex-direction:column;justify-content:center;padding:5rem 7rem 3rem 7rem;position:relative;z-index:2}
-.hero-author{height:70vh;min-height:400px;position:relative;overflow:hidden;background:var(--paper2)}
-.hero-author img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-l{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;padding:5rem 7rem 3rem 7rem;position:relative;z-index:2}
+.hero-author{position:relative;background:var(--paper2);max-width:500px;align-self:center;width:100%}
+.hero-author img{width:100%;height:auto;object-fit:contain;display:block}
 .eyebrow{font-size:.6rem;letter-spacing:.38em;text-transform:uppercase;color:var(--red);margin-bottom:2.2rem;animation:riseUp .9s ease .2s both}
 .hero-cn{font-family:"Noto Serif SC";font-weight:700;font-size:clamp(5rem,7.5vw,9rem);line-height:.9;letter-spacing:-.01em;color:var(--ink);animation:riseUp .9s ease .38s both}
 .hero-pinyin{font-size:clamp(.72rem,1vw,.9rem);font-style:italic;color:var(--mist);letter-spacing:.25em;margin-top:.6rem;margin-bottom:2.8rem;animation:riseUp .9s ease .5s both}
-.hero-desc{font-size:.95rem;line-height:1.95;color:var(--ink3);max-width:400px;margin-bottom:3rem;animation:riseUp .9s ease .65s both}
+.hero-desc{font-size:.95rem;line-height:1.95;color:var(--ink3);max-width:520px;margin-bottom:3rem;animation:riseUp .9s ease .65s both}
 .hero-cta{display:flex;gap:1rem;animation:riseUp .9s ease .8s both}
 .btn-p{padding:.8rem 2.2rem;background:var(--ink);color:var(--paper);font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;border:1px solid var(--ink);transition:all .3s}
 .btn-p:hover{background:transparent;color:var(--ink)}
@@ -442,7 +442,7 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
   html,body{height:auto;overflow:auto}
   .hero{height:auto}
   .hero-l{padding:3rem 2rem 2rem}
-  .hero-author{height:50vh;min-height:250px}
+  .hero-author{min-height:0}
   .data-strip{padding:2.5rem 2rem;grid-template-columns:repeat(2,1fr);gap:1.5rem}
   .pillars,.gallery,.press{padding:4rem 2rem}
   .pillars-grid,.press-grid{grid-template-columns:1fr}
