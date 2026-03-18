@@ -471,10 +471,12 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
   position: sticky;
   top: 80px;
   align-self: start;
-  padding: 0 0 4rem 3.5rem;
+  padding: 0 0 1rem 3rem;
   display: flex;
   flex-direction: column;   /* ALWAYS vertical */
   gap: 0;
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
   scrollbar-width: none;
 }
 .archive-years::-webkit-scrollbar { display: none; }
@@ -486,10 +488,10 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
   display: flex;
   align-items: center;
   gap: .65rem;
-  font-size: .68rem;
-  letter-spacing: .14em;
+  font-size: .58rem;
+  letter-spacing: .12em;
   color: var(--mist);
-  padding: .55rem 0;
+  padding: .32rem 0;
   transition: color .3s;
   cursor: none;
   text-decoration: none;
@@ -620,12 +622,14 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
 @media(max-width:900px){
   .archive-inner { grid-template-columns: 80px 1fr; }
   .archive-years {
-    padding: 0 0 2rem 1.2rem;
+    padding: 0 0 1rem 1.2rem;
     top: 64px;
+    max-height: calc(100vh - 74px);
+    overflow-y: auto;
     flex-direction: column;
     gap: 0;
   }
-  .archive-year-link { font-size: .6rem; padding: .45rem 0; }
+  .archive-year-link { font-size: .52rem; padding: .28rem 0; }
   .archive-works { padding: 1.5rem 1.5rem 2rem 1rem; }
   .archive-entry { grid-template-columns: 90px 1fr; gap: 1rem; }
   .archive-header { padding: 0 2rem 2rem; }
