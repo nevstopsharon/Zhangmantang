@@ -461,7 +461,7 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
 /* Always two-column: left nav + right works */
 .archive-inner {
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 180px 1fr;
   align-items: start;
   min-height: 80vh;
 }
@@ -471,9 +471,10 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
   position: sticky;
   top: 80px;
   align-self: start;
-  padding: 0 0 1rem 3rem;
+  padding: 0 0 1rem 2rem;
   display: flex;
-  flex-direction: column;   /* ALWAYS vertical */
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 0;
   max-height: calc(100vh - 90px);
   overflow-y: auto;
@@ -487,11 +488,12 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
 .archive-year-link {
   display: flex;
   align-items: center;
-  gap: .65rem;
+  gap: .5rem;
   font-size: .58rem;
-  letter-spacing: .12em;
+  letter-spacing: .1em;
   color: var(--mist);
   padding: .32rem 0;
+  width: 50%;
   transition: color .3s;
   cursor: none;
   text-decoration: none;
@@ -507,15 +509,9 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
   flex-shrink: 0;
   transition: background .3s, transform .3s;
 }
-/* vertical connector line between dots */
+/* vertical connector line disabled for 2-col layout */
 .archive-year-link + .archive-year-link::after {
-  content: '';
-  position: absolute;
-  left: 2px;
-  top: -50%;
-  height: 50%;
-  width: 1px;
-  background: var(--line);
+  content: none;
 }
 .archive-year-link:hover { color: var(--ink2); }
 .archive-year-link:hover::before { background: var(--ink3); }
@@ -620,16 +616,17 @@ footer{background:#0e0b08;padding:2.5rem 8rem;display:flex;justify-content:space
 }
 
 @media(max-width:900px){
-  .archive-inner { grid-template-columns: 80px 1fr; }
+  .archive-inner { grid-template-columns: 120px 1fr; }
   .archive-years {
-    padding: 0 0 1rem 1.2rem;
+    padding: 0 0 1rem 1rem;
     top: 64px;
     max-height: calc(100vh - 74px);
     overflow-y: auto;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 0;
   }
-  .archive-year-link { font-size: .52rem; padding: .28rem 0; }
+  .archive-year-link { font-size: .48rem; padding: .25rem 0; width: 50%; }
   .archive-works { padding: 1.5rem 1.5rem 2rem 1rem; }
   .archive-entry { grid-template-columns: 90px 1fr; gap: 1rem; }
   .archive-header { padding: 0 2rem 2rem; }
